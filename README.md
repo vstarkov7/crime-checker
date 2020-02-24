@@ -26,3 +26,4 @@ I would like for the user to be able to pull information about general crime sta
 
 Add more statistics. Make the user able to look up crime stats for more specific neighborhoods. Make the buttons and dropdown menus more intuitive.
 
+![](https://media.giphy.com/media/Wn74RUT0vjnoU98Hnt/giphy.gif)
