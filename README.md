@@ -6,9 +6,13 @@ This app will connect to FBI Crime API through specific endpoints and retrieve d
 
 ## Wireframes
 
-![First Wireframe Image]()
+![First Wireframe Image](https://i.imgur.com/2Bh8gpj.jpg)
 
-![Second Wireframe Image]()
+![Second Wireframe Image](https://i.imgur.com/I2vRlNq.jpg)
+
+![Third Wireframe Image](https://i.imgur.com/7CyQt2w.jpg)
+
+![Fourth Wireframe Image](https://i.imgur.com/jUHgyZR.jpg)
 
 ## API
 
