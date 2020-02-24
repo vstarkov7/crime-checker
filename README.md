@@ -16,7 +16,7 @@ This app will connect to FBI Crime API through specific endpoints and retrieve d
 
 ## API
 
-I will be using FBI Crime API with my .gov API key.
+I will be using FBI Crime API with my .gov API key. https://crime-data-explorer.fr.cloud.gov/api
 
 ## MVP
 
