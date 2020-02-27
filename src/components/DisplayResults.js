@@ -6,28 +6,28 @@ const DisplayResults = (props) => {
   console.log(props.results)
   const specificStateData = props.results[0]
   return (
-    <>
+    <div className="results_container">
 
       {props.results.length === 0 ?
-        <h1>Loading...</h1>
+        <div></div>
         :
         <div className="state_results_box">
-          <h1>State: {specificStateData.state_abbr}</h1>
-          <h1>Year: {specificStateData.year}</h1>
-          <h1>Population: {specificStateData.population}</h1>
-          <h1>Violent crime: {specificStateData.violent_crime}</h1>
-          <h1>Homicide: {specificStateData.homicide}</h1>
-          <h1>Rape: {specificStateData.rape_legacy}</h1>
-          <h1>Robbery: {specificStateData.robbery}</h1>
-          <h1>Aggravated assault: {specificStateData.aggravated_assault}</h1>
-          <h1>Property crime: {specificStateData.property_crime}</h1>
-          <h1>Burglary: {specificStateData.burglary}</h1>
-          <h1>Larceny: {specificStateData.larceny}</h1>
-          <h1>Motor vehicle theft: {specificStateData.motor_vehicle_theft}</h1>
-          <h1>Arson: {specificStateData.arson}</h1>
+          <div className="state_results_header">Crime Stats for {specificStateData.state_abbr} in {specificStateData.year}:</div>
+          <div className="state_result">Population: {specificStateData.population}</div>
+          <div className="state_result">Violent crime: {specificStateData.violent_crime}</div>
+          <div className="state_result">Homicide: {specificStateData.homicide}</div>
+          <div className="state_result">Rape (legacy): {specificStateData.rape_legacy}</div>
+          <div className="state_result">Rape (revised): {specificStateData.rape_revised}</div>
+          <div className="state_result">Robbery: {specificStateData.robbery}</div>
+          <div className="state_result">Aggravated assault: {specificStateData.aggravated_assault}</div>
+          <div className="state_result">Property crime: {specificStateData.property_crime}</div>
+          <div className="state_result">Burglary: {specificStateData.burglary}</div>
+          <div className="state_result">Larceny: {specificStateData.larceny}</div>
+          <div className="state_result">Motor vehicle theft: {specificStateData.motor_vehicle_theft}</div>
+          <div className="state_result">Arson: {specificStateData.arson}</div>
         </div>
       }
-    </>
+    </div>
   )
 }
 

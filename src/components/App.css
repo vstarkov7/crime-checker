@@ -43,10 +43,28 @@ body {
   padding: 1em 0;
   font-size: 1.1em;
 }
+.results_container {
+
+}
 .state_results_box {
-  border: 1px solid black;
+  /* border: 1px solid #C41E3D; */
+  margin: 20px auto;
   padding: 20px;
-  margin: 20px;
+  /* margin: 20px; */
+  width: 70%;
+  /* background-color: #C41E3D; */
+  background-color: #504E56;
+  /* color: #C41E3D; */
+  color: #FFE2EB;
+    /* display: flex;
+    flex-flow: row;
+    align-items: center; */
+    /* border: 1px solid gray; */
+    border-radius: 20px;
+}
+.state_results_header {
+  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  font-size: 1.5em;
 }
 button {
   /* background: #2A88AD; */
