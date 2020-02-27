@@ -104,8 +104,9 @@ body {
   padding-left: 15px;
 }
 .state_results_img img{
-  width: 70%;
+  width: 25vw;
   padding-top: 5%;
+  padding-right: 5%;
 }
 button {
   /* background: #2A88AD; */
@@ -182,4 +183,36 @@ input {
 	box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
 	-moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
 	-webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+@media (max-width: 925px) {
+
+}
+@media (max-width: 768px) {
+.state_result {
+  font-size: 1em;
+}
+}
+@media (max-width: 646px) {
+  .state_result {
+    font-size: 0.9em;
+  }
+  .state_results_header{
+    font-size: 1.3em
+  }
+}
+@media (max-width: 576px) {
+  .state_result {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: 510px) {
+  .state_result {
+    font-size: 0.7em;
+  }
+  .state_results_header{
+    font-size: 1.2em
+  }
+}
+@media (max-width: 480px) {
+
 }
