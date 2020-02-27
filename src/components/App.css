@@ -189,28 +189,40 @@ input {
 }
 @media (max-width: 768px) {
 .state_result {
-  font-size: 1em;
+  /* font-size: 1em; */
+}
+.state_results_box {
+  width: 70%;
+}
+.state_results_img img {
+  width: 35vw;
 }
 }
 @media (max-width: 646px) {
   .state_result {
-    font-size: 0.9em;
+    /* font-size: 0.9em; */
   }
   .state_results_header{
-    font-size: 1.3em
+    /* font-size: 1.3em */
   }
 }
 @media (max-width: 576px) {
   .state_result {
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
   }
 }
 @media (max-width: 510px) {
   .state_result {
-    font-size: 0.7em;
+    /* font-size: 0.7em; */
   }
   .state_results_header{
-    font-size: 1.2em
+    /* font-size: 1.2em */
+  }
+  .state_results_box {
+    width: 90%;
+  }
+  .state_results_img img {
+    width: 45vw;
   }
 }
 @media (max-width: 480px) {
