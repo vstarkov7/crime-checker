@@ -1,4 +1,5 @@
 import React from 'react'
+import detective_image from '../img/crime_detective2.png'
 
 const DisplayResults = (props) => {
   // const switchPrice = Number(stock.change) > 0 ? 'up' : 'down'
@@ -13,18 +14,26 @@ const DisplayResults = (props) => {
         :
         <div className="state_results_box">
           <div className="state_results_header">Crime Stats for {specificStateData.state_abbr} in {specificStateData.year}:</div>
-          <div className="state_result">Population: {specificStateData.population}</div>
-          <div className="state_result">Violent crime: {specificStateData.violent_crime}</div>
-          <div className="state_result">Homicide: {specificStateData.homicide}</div>
-          <div className="state_result">Rape (legacy): {specificStateData.rape_legacy}</div>
-          <div className="state_result">Rape (revised): {specificStateData.rape_revised}</div>
-          <div className="state_result">Robbery: {specificStateData.robbery}</div>
-          <div className="state_result">Aggravated assault: {specificStateData.aggravated_assault}</div>
-          <div className="state_result">Property crime: {specificStateData.property_crime}</div>
-          <div className="state_result">Burglary: {specificStateData.burglary}</div>
-          <div className="state_result">Larceny: {specificStateData.larceny}</div>
-          <div className="state_result">Motor vehicle theft: {specificStateData.motor_vehicle_theft}</div>
-          <div className="state_result">Arson: {specificStateData.arson}</div>
+          <div className="state_results_body">
+            <div className="state_results_info">
+              <div className="state_result"><div className="state_result_name">Population</div> <div className="state_result_number">{specificStateData.population}</div></div>
+              <div className="state_result"><div className="state_result_name">Violent crime</div> <div className="state_result_number">{specificStateData.violent_crime}</div></div>
+              <div className="state_result"><div className="state_result_name">Homicide</div> <div className="state_result_number">{specificStateData.homicide}</div></div>
+              <div className="state_result"><div className="state_result_name">Rape (legacy)</div> <div className="state_result_number">{specificStateData.rape_legacy}</div></div>
+              <div className="state_result"><div className="state_result_name">Rape (revised)</div> <div className="state_result_number">{specificStateData.rape_revised}</div></div>
+              <div className="state_result"><div className="state_result_name">Robbery</div> <div className="state_result_number">{specificStateData.robbery}</div></div>
+              <div className="state_result"><div className="state_result_name">Aggravated assault</div> <div className="state_result_number">{specificStateData.aggravated_assault}</div></div>
+              <div className="state_result"><div className="state_result_name">Property crime</div> <div className="state_result_number">{specificStateData.property_crime}</div></div>
+              <div className="state_result"><div className="state_result_name">Burglary</div> <div className="state_result_number">{specificStateData.burglary}</div></div>
+              <div className="state_result"><div className="state_result_name">Larceny</div> <div className="state_result_number">{specificStateData.larceny}</div></div>
+              <div className="state_result"><div className="state_result_name">Motor vehicle theft</div> <div className="state_result_number">{specificStateData.motor_vehicle_theft}</div></div>
+              <div className="state_result"><div className="state_result_name">Arson</div> <div className="state_result_number">{specificStateData.arson}</div></div>
+            </div>
+            <div className="state_results_img">
+              <img src={detective_image} alt="Picture of a detective" />
+            </div>
+
+          </div>
         </div>
       }
     </div>
