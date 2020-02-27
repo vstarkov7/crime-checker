@@ -8,7 +8,7 @@ import {
 
 const Home = (props) => {
   return (
-    <div>
+    <div className="home_container">
       Welcome to the Crime Checker app! You can look up crime statistics for any US state <Link to={'/state_search'}>here!</Link>
     </div>
   )

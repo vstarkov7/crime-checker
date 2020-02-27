@@ -7,7 +7,7 @@ const DisplayResults = (props) => {
   const specificStateData = props.results[0]
   return (
     <>
-      <h1>Display Results Here</h1>
+
       {props.results.length === 0 ?
         <h1>Loading...</h1>
         :
