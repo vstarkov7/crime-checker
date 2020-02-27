@@ -1,5 +1,5 @@
 .header_container {
-  background-image: url("../img/crime_fingerprint2.jpg");
+  background-image: url("../img/crime_fingerprint3.jpg");
   background-size: cover;
   height: 20em;
   color: white;
@@ -7,7 +7,7 @@
 
 nav a{
   color: white;
-  text-dec
+  text-decoration: none;
 }
 
 .state_results_box {

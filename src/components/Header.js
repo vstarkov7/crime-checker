@@ -11,12 +11,15 @@ const Header = (props) => {
     <div className="header_container">
       <h1>Crime Checker App</h1>
       <nav>
-      <Link to={'/state_search'}>
-        Go to state search
-    </Link>
       <Link to={'/'}>
-        Go home
+        Home
     </Link>
+      <Link to={'/state_search'}>
+        State Lookup
+    </Link>
+        <Link to={'/about_me'}>
+          About Me
+        </Link>  
     </nav>
     </div>
   )
