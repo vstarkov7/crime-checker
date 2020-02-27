@@ -9,18 +9,18 @@ import {
 const Header = (props) => {
   return (
     <div className="header_container">
-      <div className="main_title">Crime Checker App</div>
+      <div className="main_title">Crime Checker</div>
       <nav>
-      <Link to={'/'}>
-        Home
+        <Link to={'/'}>
+          Home
     </Link>
-      <Link to={'/state_search'}>
-        State Lookup
+        <Link to={'/state_search'}>
+          State Lookup
     </Link>
         <Link to={'/about_me'}>
           About Me
-        </Link>  
-    </nav>
+        </Link>
+      </nav>
     </div>
   )
 }

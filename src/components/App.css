@@ -5,9 +5,10 @@
   color: white;
 }
 .main_title {
-  padding-top: 1.5%;
+  padding-top: 1%;
   padding-bottom: 1%;
-  font-size: 2.5em;
+  /* font-size: 2.5em; */
+  font-size: 5vw;
   font-family: 'Oswald', Arial, Helvetica, sans-serif;
 }
 nav {
@@ -18,7 +19,8 @@ nav {
 nav a{
   font-family: 'Cardo',  Arial, Helvetica, sans-serif;
   padding: 0 5%;
-  font-size: 1.25em;
+  /* font-size: 1.25em; */
+  font-size: 3vw;
   color: white;
   text-decoration: none;
 }
@@ -188,6 +190,12 @@ input {
 
 }
 @media (max-width: 768px) {
+  .main_title {
+    font-size: 8vw;
+  }
+  nav a{
+    font-size: 5vw;
+  }
 .state_result {
   /* font-size: 1em; */
 }
@@ -212,6 +220,12 @@ input {
   }
 }
 @media (max-width: 510px) {
+  .main_title {
+    font-size: 10vw;
+  }
+  nav a{
+    font-size: 8vw;
+  }
   .state_result {
     /* font-size: 0.7em; */
   }
@@ -226,5 +240,10 @@ input {
   }
 }
 @media (max-width: 480px) {
-
+  .state_results_box {
+    width: 90%;
+  }
+  .state_results_img img {
+    width: 45vw;
+  }
 }
