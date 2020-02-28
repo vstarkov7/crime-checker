@@ -12,7 +12,7 @@ const DisplayResults = (props) => {
       {props.results.length === 0 ?
         <div></div>
         :
-        <div className="state_results_box">
+        <div className="state_results_box" id="crime_stats">
           <div className="state_results_header">Crime Stats for {specificStateData.state_abbr} in {specificStateData.year}:</div>
           <div className="state_results_body">
             <div className="state_results_info">

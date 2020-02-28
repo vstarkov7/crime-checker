@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import Search from './Search'
 import DisplayResults from './DisplayResults'
+import Footer from './Footer'
+import AboutMe from './AboutMe'
 import axios from 'axios'
 import ApiEndpoints from '../lib/ApiEndpoints'
 import {
@@ -43,6 +45,9 @@ class Container extends Component {
       console.error(error)
     }
   }
+  goToPicAnchor = () => {
+    window.location = '#crime_stats';
+  }
   handleChange = event => {
     this.setState({
       [event.target.name]: event.target.value
@@ -63,6 +68,7 @@ class Container extends Component {
     event.preventDefault()
 
     this.fetchStats()
+    setTimeout(() => { this.goToPicAnchor(); }, 300)
 
   }
 
@@ -92,7 +98,12 @@ class Container extends Component {
               {...props}
             />}
           />
+          <Route
+            exact path={"/about_me"}
+            render={() => <AboutMe />}
+          />
         </Switch>
+        <Footer />
         {/* <StateSearch
           onChange={this.handleChange}
           onSubmit={this.handleSubmit}

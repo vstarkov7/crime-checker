@@ -1,3 +1,7 @@
+footer {
+  margin: 0 auto;
+  margin-top: 100px;
+}
 .header_container {
   background-image: url("../img/crime_fingerprint3.jpg");
   background-size: cover;
