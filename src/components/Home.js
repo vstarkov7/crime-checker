@@ -8,7 +8,7 @@ const Home = (props) => {
   return (
     <div className="home_body">
       <div className="home_container">
-        Welcome to the Crime Checker app, which uses FBI's API to access crime statistics. You can look up crime statistics for any US state by clicking on the fingerprint brush:
+        Welcome to the Crime Checker app, which uses FBI's API to access crime statistics. You can look up crime statistics for any US state by clicking the fingerprint brush:
       </div>
       <Link to={'/state_search'}>
         <img src={fingerprint_image} alt="Image of a fingerprint" />
