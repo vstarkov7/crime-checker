@@ -63,6 +63,8 @@ body {
   font-family: 'Lato',  Arial, Helvetica, sans-serif;
   padding: 1em 0;
   font-size: 1.1em;
+  margin: 0 auto;
+  width: 80%;
 }
 .state_results_box {
   margin: 20px auto;

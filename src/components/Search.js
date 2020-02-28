@@ -4,7 +4,7 @@ const Search = ({ onChange, onSubmit, stateValue, yearValue, keyUp, name, value 
   return (
     <>
       <div className="search_prompt_text">
-        To view crime statistics, please enter a state and a year in the YYYY format:
+        To view crime statistics for any US state, please enter a 2-letter state abbreviation and the year in YYYY format:
     </div>
       <form onSubmit={e => onSubmit(e)}>
         <input
