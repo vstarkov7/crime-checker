@@ -62,6 +62,7 @@ class Container extends Component {
   handleInputSubmit = event => {
 
     this.fetchStats()
+    setTimeout(() => { this.goToPicAnchor(); }, 300)
 
   }
   handleSubmit = event => {
