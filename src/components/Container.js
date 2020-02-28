@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Search from './Search'
 import DisplayResults from './DisplayResults'
+import NotFound from './NotFound'
 import Footer from './Footer'
 import AboutMe from './AboutMe'
 import axios from 'axios'
@@ -102,6 +103,9 @@ class Container extends Component {
           <Route
             exact path={"/about_me"}
             render={() => <AboutMe />}
+          />
+          <Route
+            render={() => <NotFound />}
           />
         </Switch>
         <Footer />
