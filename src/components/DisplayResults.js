@@ -16,8 +16,8 @@ const DisplayResults = (props) => {
               <div className="state_result"><div className="state_result_name">Population</div> <div className="state_result_number">{specificStateData.population}</div></div>
               <div className="state_result"><div className="state_result_name">Violent crime</div> <div className="state_result_number">{specificStateData.violent_crime}</div></div>
               <div className="state_result"><div className="state_result_name">Homicide</div> <div className="state_result_number">{specificStateData.homicide}</div></div>
-              <div className="state_result"><div className="state_result_name">Rape (legacy)</div> <div className="state_result_number">{specificStateData.rape_legacy}</div></div>
-              <div className="state_result"><div className="state_result_name">Rape (revised)</div> <div className="state_result_number">{specificStateData.rape_revised}</div></div>
+              <div className="state_result"><div className="state_result_name">Rape (legacy)</div> <div className="state_result_number">{specificStateData.rape_legacy === null ? <div>No data available</div> : `${specificStateData.rape_legacy}`}</div></div>
+              <div className="state_result"><div className="state_result_name">Rape (revised)</div> <div className="state_result_number">{specificStateData.rape_revised === null ? <div>No data available</div> : `${specificStateData.rape_revised}`}</div></div>
               <div className="state_result"><div className="state_result_name">Robbery</div> <div className="state_result_number">{specificStateData.robbery}</div></div>
               <div className="state_result"><div className="state_result_name">Aggravated assault</div> <div className="state_result_number">{specificStateData.aggravated_assault}</div></div>
               <div className="state_result"><div className="state_result_name">Property crime</div> <div className="state_result_number">{specificStateData.property_crime}</div></div>
