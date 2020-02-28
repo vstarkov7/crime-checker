@@ -46,7 +46,7 @@ body {
 }
 .home_body img {
   text-align: center;
-  width: 40%;
+  width: 50%;
   padding-top: 2em;
 }
 .home_container {
@@ -209,6 +209,9 @@ input {
 }
 .state_results_img img {
   width: 35vw;
+}
+.home_body img {
+  width: 70%;
 }
 }
 @media (max-width: 510px) {
