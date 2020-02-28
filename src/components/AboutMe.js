@@ -1,10 +1,5 @@
 import React from 'react'
-import {
-  Link,
-  Route,
-  NavLink,
-  Switch
-} from 'react-router-dom'
+
 
 const AboutMe = (props) => {
   return (

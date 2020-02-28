@@ -1,10 +1,7 @@
 import React from 'react'
 import fingerprint_image from '../img/crime_fingerprint_brush.png'
 import {
-  Link,
-  Route,
-  NavLink,
-  Switch
+  Link
 } from 'react-router-dom'
 
 const Home = (props) => {

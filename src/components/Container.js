@@ -30,16 +30,13 @@ class Container extends Component {
   fetchStats = async () => {
     try {
       const res = await axios.get(`${ApiEndpoints.state}/${this.state.searchState}/1979/2020?API_KEY=${IEX_TOKEN}`)
-      console.log(res.data.results)
       const resData = res.data.results
       const filteredResult = resData.filter((datapoint) => {
         return datapoint.year == this.state.searchYear
       })
-      console.log(filteredResult)
       this.setState({
         stateResult: filteredResult
       })
-      // console.log(this.state.stateResults)
 
     } catch (error) {
       console.error(error)
@@ -105,14 +102,6 @@ class Container extends Component {
           />
         </Switch>
         <Footer />
-        {/* <StateSearch
-          onChange={this.handleChange}
-          onSubmit={this.handleSubmit}
-          stateValue={this.state.searchState}
-          yearValue={this.state.searchYear}
-          name="searchQuery"
-          results={this.state.stateResult}
-        /> */}
       </>
     )
   }

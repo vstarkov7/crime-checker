@@ -11,7 +11,6 @@ footer {
 .main_title {
   padding-top: 1%;
   padding-bottom: 1%;
-  /* font-size: 2.5em; */
   font-size: 5vw;
   font-family: 'Oswald', Arial, Helvetica, sans-serif;
 }
@@ -23,7 +22,6 @@ nav {
 nav a{
   font-family: 'Cardo',  Arial, Helvetica, sans-serif;
   padding: 0 5%;
-  /* font-size: 1.25em; */
   font-size: 3vw;
   color: white;
   text-decoration: none;
@@ -32,9 +30,7 @@ nav a:hover{
   -moz-text-shadow: 1px 1px #3985B1;
 	-webkit-text-shadow: 1px 1px #3985B1;
   text-shadow: 1px 1px #3985B1;
-  /* color: black; */
   color: white;
-  /* text-decoration: underline; */
 }
 body {
   margin: 0;
@@ -57,7 +53,6 @@ body {
   background-color: #F9EAED;
   padding-top: 1em;
   font-size: 1.1em;
-  /* background-color: #504E56; */
 }
 .home_container a{
   color: blue;
@@ -69,24 +64,13 @@ body {
   padding: 1em 0;
   font-size: 1.1em;
 }
-.results_container {
-
-}
 .state_results_box {
-  /* border: 1px solid #C41E3D; */
   margin: 20px auto;
   padding: 10px 20px 20px 20px;
-  /* margin: 20px; */
   width: 50%;
-  /* background-color: #C41E3D; */
   background-color: #504E56;
-  /* color: #C41E3D; */
   color: #FFE2EB;
-    /* display: flex;
-    flex-flow: row;
-    align-items: center; */
-    /* border: 1px solid gray; */
-    border-radius: 60px;
+  border-radius: 60px;
 }
 .state_results_header {
   font-family: 'Oswald', Arial, Helvetica, sans-serif;
@@ -109,9 +93,6 @@ body {
   font-size: 1.1em;
   margin-bottom: 0.5em;
 }
-.state_result_name {
-
-}
 .state_result_number {
   font-weight: bold;
   padding-left: 15px;
@@ -122,7 +103,6 @@ body {
   padding-right: 5%;
 }
 button {
-  /* background: #2A88AD; */
   background: #413C58;
   margin-top: 1em;
 	padding: 5px 50px 5px 50px;
@@ -187,7 +167,6 @@ input {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	/* width: 100%; */
 	padding: 8px;
 	border-radius: 6px;
 	-webkit-border-radius:6px;

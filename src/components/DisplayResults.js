@@ -2,9 +2,6 @@ import React from 'react'
 import detective_image from '../img/crime_detective2.png'
 
 const DisplayResults = (props) => {
-  // const switchPrice = Number(stock.change) > 0 ? 'up' : 'down'
-  // console.log(props)
-  console.log(props.results)
   const specificStateData = props.results[0]
   return (
     <div className="results_container">
