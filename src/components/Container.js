@@ -7,9 +7,7 @@ import AboutMe from './AboutMe'
 import axios from 'axios'
 import ApiEndpoints from '../lib/ApiEndpoints'
 import {
-  Link,
   Route,
-  NavLink,
   Switch
 } from 'react-router-dom'
 import StateSearch from './StateSearch';
@@ -44,6 +42,11 @@ class Container extends Component {
   }
   goToPicAnchor = () => {
     window.location = '#crime_stats';
+  }
+  isValidDate(dateString) {
+    let regEx = /^\d{4}$/;
+    if (!dateString.match(regEx)) return false;  // Invalid format
+    return true
   }
   handleChange = event => {
     this.setState({
