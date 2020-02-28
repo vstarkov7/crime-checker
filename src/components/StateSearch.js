@@ -10,6 +10,7 @@ const StateSearch = (props) => {
         onSubmit={props.onSubmit}
         stateValue={props.stateValue}
         yearValue={props.yearValue}
+        keyUp={props.keyUp}
         name="searchQuery"
        />
       <DisplayResults

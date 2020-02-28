@@ -48,6 +48,17 @@ class Container extends Component {
       [event.target.name]: event.target.value
     })
   }
+  inputEnter = (event) => {
+    if (event.keyCode === 13) {
+      event.preventDefault()
+      this.handleInputSubmit()
+    }
+  }
+  handleInputSubmit = event => {
+
+    this.fetchStats()
+
+  }
   handleSubmit = event => {
     event.preventDefault()
 
@@ -74,6 +85,7 @@ class Container extends Component {
               onChange={this.handleChange}
               onSubmit={this.handleSubmit}
               stateValue={this.state.searchState}
+              keyUp={this.inputEnter}
               yearValue={this.state.searchYear}
               name="searchQuery"
               results={this.state.stateResult}

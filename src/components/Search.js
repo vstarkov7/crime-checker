@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Search = ({ onChange, onSubmit, stateValue, yearValue, name, value }) => {
+const Search = ({ onChange, onSubmit, stateValue, yearValue, keyUp, name, value }) => {
   return (
     <>
       <div className="search_prompt_text">
@@ -10,6 +10,7 @@ const Search = ({ onChange, onSubmit, stateValue, yearValue, name, value }) => {
         <input
           value={yearValue}
           onChange={e => onChange(e)}
+          onKeyUp={keyUp}
           name="searchYear"
           type="text"
           placeholder="YYYY"
@@ -17,6 +18,7 @@ const Search = ({ onChange, onSubmit, stateValue, yearValue, name, value }) => {
         <input
           value={stateValue}
           onChange={e => onChange(e)}
+          onKeyUp={keyUp}
           name="searchState"
           type="text"
           placeholder="State"
